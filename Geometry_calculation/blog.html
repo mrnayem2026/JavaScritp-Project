@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! ???? Tailwind css and Daisy UI CDN Link <Start>  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--! ???? Tailwind css and Daisy UI CDN Link <End>  -->
+    <title>Simple Q&A Related DOM</title>
+</head>
+
+<body>
+    <main class="container mx-auto">
+        <h1 class="text-5xl font-bold text-center my-10">Simple Q&A Related DOM</h1>
+
+        <section>
+            <!-- first Q start -->
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                    What is DOM and what is the purpose of DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>DOM is like API for web documents
+                        Creates a programming interface.
+                        <br>
+                        The full form of DOM is Document Object Model.
+                        DOM can change the structure, style and content of HTML.
+                        <br>
+                        DOM essentially represents HTML as Nodes and Objects.
+                        And programming language with a web page by this DOM
+                        Its interface is done.</p>
+                </div>
+            </div>
+            <!-- first Q start -->
+
+            <!-- 2nd Q start -->
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                    How will you select HTML elements using DOM? Name the DOM methods.
+                </div>
+                <div class="collapse-content">
+                    <p>We select HTML elements in several ways to use in DOM, HTML can do.
+                        <br>
+                        The names of 5 essential methods are given below.
+                        <br><br>
+                        1 ==> getElemntById('idName');
+                        
+                        HTML can be selected by id through these methods.
+                        <br>
+                        2 ==> getElemntsByTagName('tagName');
+                        
+                        These methods can be selected by HTML tagName.
+                        <br>
+                        3 ==> node
+                        <br>
+                        4 ==> createElement();
+                        <br>
+                        5 ==> appendChild();</p>
+                </div>
+            </div>
+            <!-- 2nd Q End -->
+
+            <!-- 3rd Q start -->
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                    What is event bubble?
+                </div>
+                <div class="collapse-content">
+                    <p>The event bubbling is a method of event propagation used in JavaScript. Event bubbling is a process that starts with the element that triggers the event and bubbles up the containing elements in order.
+                        <br><br>
+                        Using the event bubbling in JavaScript, the event is first captured and handled by the innermost element and then propagated to the outermost elements.
+                        <br>
+                        The principle of the event bubbling is very simple. When an event happens on another element, it first runs on the handlers and then on its parent element.</p>
+                </div>
+            </div>
+            <!-- 3rd Q end -->
+
+            <!-- 4th Q start -->
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                    What is a callback function and why will you use it?
+                </div>
+                <div class="collapse-content">
+                    <p>One of the more unique aspects of JavaScript is how it handles/treats functions. Functions are considered to be "first-class citizens". This has a couple of different implications.
+                        <br><br>
+                        functions are objects 
+                        you can assign a function to a variable <br>
+                        functions can be passed as a parameter to a function <br>
+                        The last bullet point is is in bold because it is essential to the idea of callbacks.</p>
+                </div>
+            </div>
+            <!-- 4th Q End -->
+        </section>
+    </main>
+</body>
+
+</html>

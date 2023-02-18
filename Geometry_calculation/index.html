@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! ???? Tailwind css and Daisy UI CDN Link <Start>  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--! ???? Tailwind css and Daisy UI CDN Link <End>  -->
+    <title>Geometry Geonius</title>
+</head>
+
+<body>
+    <!--! Header HTML5 Structure Start  -->
+    <header class="container mx-auto ">
+        <div class="navbar bg-cyan-200 mt-10 rounded-lg">
+            <div class="navbar-start">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+
+
+            <div class="navbar-end my-5 mr-4">
+                <a href="blog.html" target="_blank"
+                    class="btn bg-cyan-500 hover:bg-cyan-600 py-2 px-10  text-xl font-bold border-none">Blog</a>
+            </div>
+        </div>
+    </header>
+    <!--! Header HTML5 Structure End  -->
+
+    <!--! Main HTML5 Structure Start  -->
+    <main>
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Triangle card  HTML Structure Start -->
+                <div id="triangleCard" onmouseover="mouseover('triangleCard')"   onmouseout=" mouseOut('triangleCard')" class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <div class="py-12 px-10 rounded-lg">
+                        <figure>
+                            <img class="w-full h-40" src="./images/triangle.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-bold" id="first-name">Triangle</h2>
+                            <p>
+                                Area (A) = 0.5 <span class="text-xl">×</span>b<span class="text-xl">×</span>h
+
+                            </p>
+                            <section class="flex">
+                                <div class="">
+                                    <input id="base" type="text" placeholder="b"
+                                        class="w-20 py-1 pl-3 rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm" class="mr-2">cm</label>
+                                </div>
+                                <div class="">
+                                    <input id="height" type="text" placeholder="h"
+                                        class="w-20 py-1 pl-3  rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm">cm</label>
+                                </div>
+                            </section>
+                            <div class="card-actions justify-end pt-10">
+                                <button id="calculate" class="btn btn-info btn-block font-bold text-sm text-white">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Triangle card  HTML Structure End -->
+
+                <!-- Rectangle card  HTML Structure Start -->
+                <div id="RectangleCard" onmouseover="mouseover('RectangleCard')"   onmouseout=" mouseOut('RectangleCard')" class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <div class="py-12 px-10  rounded-lg">
+                        <figure>
+                            <img class="w-full h-40" src="./images/rectangle.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-bold" id="rectangle-title">Rectangle</h2>
+                            <p>
+                                Area (A) =W<span class="text-xl">×</span>L
+
+                            </p>
+                            <section class="flex">
+                                <div class="">
+                                    <input id="rectangle-width" type="text" placeholder="W"
+                                        class="w-20 py-1 pl-3 rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm" class="mr-2">cm</label>
+                                </div>
+                                <div class="">
+                                    <input id="rectangle-length" type="text" placeholder="L"
+                                        class="w-20 py-1 pl-3  rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm">cm</label>
+                                </div>
+                            </section>
+                            <div class="card-actions justify-end pt-10">
+                                <button id="rectangleCalc" class="btn btn-info btn-block font-bold text-sm text-white">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle card  HTML Structure End -->
+
+                <!-- Parallelogram card  HTML Structure Start -->
+                <div  id="ParallelogramCard" onmouseover="mouseover('ParallelogramCard')"   onmouseout=" mouseOut('ParallelogramCard')" class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <div class="py-12 px-10  rounded-lg">
+                        <figure>
+                            <img class="w-full h-40" src="./images/parallelogram.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-bold" id="parallelogram-name">Parallelogram</h2>
+                            <p>
+                                Area (A) =B<span class="text-xl">×</span>H
+
+                            </p>
+                            <section class="flex">
+                                <div class="">
+                                    <input id="parallelogram-width" type="text" placeholder="B"
+                                        class="w-20 py-1 pl-3 rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm" class="mr-2">cm</label>
+                                </div>
+                                <div class="">
+                                    <input id="parallelogram-length" type="text" placeholder="H"
+                                        class="w-20 py-1 pl-3  rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm">cm</label>
+                                </div>
+                            </section>
+
+                            <!-- <p class="text-xl font-semibold">b=10cm, h=12cm</p> -->
+                            <div class="card-actions justify-end pt-10">
+                                <button id="parallelogramCalc"
+                                    class="btn btn-info btn-block font-bold text-sm text-white">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Parallelogram card  HTML Structure End -->
+
+                <!-- Rhombus card  HTML Structure End -->
+                <div  id="RhombusCard" onmouseover="mouseover('RhombusCard')"   onmouseout=" mouseOut('RhombusCard')" class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <div class="py-12 px-10  rounded-lg">
+                        <figure>
+                            <img class="w-full h-40" src="./images/rhombus.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-bold" id="rhombusName">Rhombus</h2>
+                            <p>
+                                Area (A) =0.5<span class="text-xl">×</span>D<sub>1</sub><span
+                                    class="text-xl">×</span>D<sub>2</sub>
+
+                            </p>
+                            <section class="flex">
+                                <div class="">
+                                    <input id="rhombusD1" type="text" placeholder="D1"
+                                        class="w-20 py-1 pl-3 rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm" class="mr-2">cm</label>
+                                </div>
+                                <div class="">
+                                    <input id="rhombusD2" type="text" placeholder="D2"
+                                        class="w-20 py-1 pl-3  rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm">cm</label>
+                                </div>
+                            </section>
+
+                            <!-- <p class="text-xl font-semibold"></span>D<sub>1</sub>=16cm, </span>D<sub>2</sub>=8cm</p> -->
+                            <div class="card-actions justify-end pt-10">
+                                <button id="rhombusCalc" class="btn btn-info btn-block font-bold text-sm text-white">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Rhombus card  HTML Structure End -->
+
+                <!-- Pentagon card  HTML Structure End -->
+                <div  id="PentagonCard" onmouseover="mouseover('PentagonCard')"   onmouseout=" mouseOut('PentagonCard')" class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <div class="py-12 px-10  rounded-lg">
+                        <figure>
+                            <img class="w-full h-40" src="./images/pentagon.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-bold" id="pentagon-name">Pentagon</h2>
+                            <p>
+                                Area (A) =0.5<span class="text-xl">×</span>P<span class="text-xl">×</span>B
+
+                            </p>
+                            <section class="flex">
+                                <div class="">
+                                    <input id="pentagon-p" type="text" placeholder="P"
+                                        class="w-20 py-1 pl-3 rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm" class="mr-2">cm</label>
+                                </div>
+                                <div class="">
+                                    <input id="pentagon-b" type="text" placeholder="B"
+                                        class="w-20 py-1 pl-3  rounded-lg bg-slate-300 placeholder:text-black placeholder:text-base">
+                                    <label for="cm">cm</label>
+                                </div>
+                            </section>
+
+                            <!-- <p class="text-xl font-semibold">P=6cm, B=10cm</p> -->
+                            <div class="card-actions justify-end pt-10">
+                                <button id="pentagonCalc" class="btn btn-info btn-block font-bold text-sm text-white">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagon card  HTML Structure End -->
+
+                <!-- Ellipse card  HTML Structure End -->
+                <div  id="EllipseCard" onmouseover="mouseover('EllipseCard')"   onmouseout=" mouseOut('EllipseCard')" class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <div class="py-12 px-10 rounded-lg">
+                        <figure>
+                            <img class="w-full h-40" src="./images/ellipse.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-bold" id="elipseName">Ellipse</h2>
+                            <p>
+                                Area (A) =<span class="text-xl">π</span>AB
+
+                            </p>
+                            <p class="text-xl font-semibold">A= <span id="ellipseA">10</span>cm, B= <span id="ellipseB">4</span>cm</p>
+                            <div class="card-actions justify-end pt-10">
+                                <button id="ellipseCalc" class="btn btn-info btn-block font-bold text-sm text-white">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ellipse card  HTML Structure End -->
+            </div>
+
+            <!-- cart details div  -->
+            <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+                <h1 class="text-3xl text-center font-bold underline my-5">
+                    Area Calculation
+                </h1>
+                <div class="overflow-x-auto pl-4">
+                    <table class="table w-full ">
+                        <thead class="">
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Area</th>
+                                <th>Covert mm</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- <tr>
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td>
+                  </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--! Main HTML5 Structure End  -->
+
+    <!--! Footer HTML5 Structure Start  -->
+    <footer></footer>
+    <!--! Footer HTML5 Structure End  -->
+    <!-- JavaScript Link  -->
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

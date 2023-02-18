@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicount apps using JavaScirpt</title>
+    <!-- overflow-y-hidden -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <!-- DaisyUI CDN Start  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- DaisyUI CDN End  -->
+
+    <!-- Tailwind CSS CDN Start  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS CDN End -->
+</head>
+
+<body class=" bg-gradient-to-r from-purple-500 to-pink-500">
+    <main >
+        <img class="bg-contain w-full h-full opacity-50 relative" src="./img/d.png" alt="">
+        <div class="flex items-center justify-center">
+            <div class="card w-96 bg-base-100 shadow-xl absolute top-[150px]">
+                <figure><img src="./img/iphone.jpg" alt="iphone" /></figure>
+                <div class="card-body text-orange-300">
+                    <h2 class="card-title text-5xl">Iphone 11</h2>
+                    <h3 class="p-1 text-lime-400">Price : $<span id="price">1000</span></h3>
+                    <div>
+                        <button><i class="fa-solid fa-square-minus" id="minus"></i></button>
+                        <span id="quantity">0</span>
+                        <button><i class="fa-sharp fa-solid fa-square-plus" id="plus"></i></button>
+                    </div>
+                    <p class="text-base">if you want to 30$ discount,plese wirte '<span class="text-red-500 font-black text-lg">DISC30</span>' code in below input field. </p>
+                    <input id="discountCode" type="text" class="p-2 rounded-btn bg-gray-200 text-black placeholder-black" placeholder="Enter Dicount code.........">
+                    <p>
+                        Please give shopkipper : $<span id="shopkipperBlance">00</span>
+                    </p>
+                    <p>
+                        Your discount ammount : $<span id="discountAmmount">00</span>
+                    </p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary" id="buyNow">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JavaScirpt Add  -->
+    <script src="./js/cartCalculator.js"></script>
+</body>
+
+</html>
